@@ -1,0 +1,246 @@
+@font-face {
+  font-family: "ismail";
+  src: url(/../../../fonts/english-font/myriad-pro/Myriad-Pro-Bold-SemiExtended.ttf) format("ttf"), url(/../../../fonts/english-font/myriad-pro/MyriadPro-BlackSemiCn.otf) format("otf"), url(/../../../fonts/english-font/myriad-pro/MyriadPro-Bold.otf) format("otf")
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+body {
+  margin: 0 auto;
+  padding: 0;
+}
+
+header {
+  background-color: #289890;
+  height: 100px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.navbarIco {
+  color: #fff;
+font-family: Nunito;
+  list-style: none;
+  padding: 20px;
+}
+.navbarIco:hover{
+color:#000;
+font-size: 2em;
+}
+
+.first {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: 550px;
+}
+
+.marwa-img {
+  width: 30%;
+  height: 60%;
+  border-radius: 100%;
+  animation: 1s ease-out 1s 1 slideInFromLeft;
+}
+
+.marwa-img:hover{
+height: 70%;
+width: 35%;
+border:solid 3px  #289890;
+opacity: 0.5;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+}
+
+.name {
+  font-family: serif;
+  font-size: 3em;
+  -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, .6) 50%, #000 50%, rgba(0, 0, 0, .6) 70%);
+-webkit-mask-size: 300%;
+animation: shine 2s infinite;
+}
+
+.am {
+  color: #289890;
+}
+
+.dev {
+  font-family: sans-serif;
+  font-size: 1.5em;
+  color: #289890;
+   animation: 1s ease-out 1s 1 slideInFromRight;
+}
+.dev:hover{
+  font-size: 2em;
+}
+
+.secName {
+  text-align: center;
+  font-family: serif;
+  font-size: 3em;
+  color: #289890;
+   animation: 1s ease-out 1s 1 slideInFromRight;
+   -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, .6) 50%, #000 50%, rgba(0, 0, 0, .6) 70%);
+ -webkit-mask-size: 300%;
+ animation: shine 2s infinite;
+}
+
+.second {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 550px;
+}
+
+.third {
+  display: block;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.workImg {
+  width: 25%;
+  border-radius: 20px;
+  margin: 5px;
+  height: 150px;
+  border :#000 solid 1px;
+}
+
+.workImg:hover{
+ opacity: 0.5;
+ border-radius: 40px;
+}
+
+.forth {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  height: 550px;
+}
+
+.contactForm{
+    width: 80%;
+  height:500px;
+}
+.labelName{
+  color: #2e988f;
+}
+.form-input{
+  display: block;
+  justify-content: center;
+  text-align: center;
+  font-size: 1em;
+  width: 100%;
+  height: 50px;
+      margin-bottom: 25px;
+border: solid #2e988f
+}
+#comment{
+  width: 100%;
+    font-size: 1em;
+  height: 150px;
+    text-align: center;
+        margin-bottom: 25px;
+      border: solid #2e988f
+}
+.Contact_btn{
+  width:40%;
+  height: 50px;
+  color:#fff;
+  background-color:  #2e988f;
+  font-size: 1em;
+  border: solid #fff;
+}
+.Contact_btn:hover{
+  color:#2e988f;
+  background-color: #fff;
+  border: solid #2e988f;
+}
+.connect {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.social {
+  width: 30px;
+  height: 30px;
+}
+.social:hover{
+  width: 35px;
+  height: 35px;
+  opacity: 0.5;
+
+}
+
+footer {
+  height: 50px;
+  width: 100%;
+  background-color: #2e988f;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: serif;
+  font-size: 1.5em;
+  text-align: center;
+  position: static;
+}
+
+
+.love {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+ animation: 1s ease-out 1s 1 slideInFromRight;
+}
+.love:hover{
+  width: 40px;
+  height: 40px;
+}
+
+@-webkit-keyframes shine {
+  from {
+    -webkit-mask-position: 180%;
+  }
+  to {
+    -webkit-mask-position: -50%;
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
